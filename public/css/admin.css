@@ -1,0 +1,41 @@
+[hidden] { display: none !important; }
+
+.login { min-height: 100vh; display: grid; place-items: center; padding: 16px; background: radial-gradient(circle at 70% 20%, color-mix(in srgb, var(--primary) 25%, transparent), transparent 50%), var(--bg); }
+.login__card { width: min(420px, 100%); }
+.login__card .logo { display: inline-block; margin-bottom: 1.5rem; }
+.login__card h1 { font-size: 1.6rem; }
+
+.dash__top { border-bottom: 1px solid var(--border); background: var(--bg-alt); }
+.dash__top-inner { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+.dash__actions { display: flex; gap: .5rem; }
+.dash__main { padding: 2rem 0 4rem; }
+
+.kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.kpi { padding: 1.25rem 1.5rem; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); }
+.kpi strong { display: block; font-size: 2rem; font-weight: 800; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.kpi span { color: var(--muted); font-size: .9rem; }
+
+.tabs { display: flex; gap: .5rem; margin-bottom: 1.5rem; }
+
+.list { display: grid; gap: .75rem; align-content: start; }
+.item { padding: 1.25rem 1.5rem; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); }
+.item.is-unread { border-left: 3px solid var(--primary); }
+.item__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
+.item__head h3 { font-size: 1.05rem; margin: 0 0 .2rem; }
+.item__meta { color: var(--muted); font-size: .85rem; }
+.item__meta a { color: var(--primary-2); }
+.item__body { margin: .9rem 0 0; color: var(--muted); white-space: pre-wrap; word-break: break-word; }
+.item__actions { display: flex; gap: .4rem; flex-wrap: wrap; }
+.btn--danger { border-color: color-mix(in srgb, var(--danger) 50%, var(--border)); color: var(--danger); background: transparent; }
+.btn--danger:hover { background: color-mix(in srgb, var(--danger) 12%, transparent); }
+
+.dash__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+.dash__grid .form h2 { font-size: 1.3rem; margin-bottom: 1.25rem; }
+.check { display: flex; align-items: center; gap: .6rem; margin-bottom: 1.25rem; font-weight: 500; cursor: pointer; }
+.check input { width: 18px; height: 18px; accent-color: var(--primary); }
+.form__actions { display: flex; gap: .75rem; flex-wrap: wrap; }
+
+@media (max-width: 860px) {
+  .dash__grid { grid-template-columns: 1fr; }
+  .kpis { grid-template-columns: 1fr; }
+}

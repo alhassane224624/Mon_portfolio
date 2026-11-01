@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-full-stack",
+  "version": "1.0.0",
+  "description": "Portfolio full stack : API REST Node.js/Express, base SQLite (Turso en ligne), front-end moderne et espace d'administration.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "dev": "node --watch --env-file-if-exists=.env server/index.js",
+    "db:migrate": "node --env-file-if-exists=.env server/migrate-to-turso.js"
+  },
+  "engines": {
+    "node": ">=22.9"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.15",
+    "express": "^5.1.0",
+    "nodemailer": "^10.2.1"
+  }
+}

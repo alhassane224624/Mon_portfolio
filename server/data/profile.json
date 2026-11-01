@@ -1,0 +1,149 @@
+{
+  "name": "Alhassane Diane",
+  "role": "Développeur Full Stack",
+  "tagline": "Passionné par le numérique et la création de solutions web performantes, je conçois des applications modernes — de la base de données jusqu'à l'interface — pour accompagner la transformation digitale des organisations.",
+  "location": "Nador, Maroc",
+  "email": "alhassanediane62496@gmail.com",
+  "photo": "/img/profile.jpg",
+  "cv": "/cv/ALHASSANE_DIANE.pdf",
+  "available": true,
+  "phones": [
+    {
+      "label": "Maroc",
+      "number": "+212 559 992 257",
+      "whatsapp": false
+    },
+    {
+      "label": "Guinée · WhatsApp",
+      "number": "+224 524 955 822",
+      "whatsapp": true
+    }
+  ],
+  "about": [
+    "Développeur Full Stack diplômé de la Cité des Métiers et des Compétences de Nador (OFPPT), je conçois des applications web complètes : back-end Laravel ou Node.js, interfaces React, bases de données MySQL et MongoDB.",
+    "Curieux, rigoureux et motivé, j'ai déjà livré plusieurs plateformes de gestion en conditions réelles — archives, documents administratifs, établissements de formation — et je cherche à contribuer à des projets innovants au sein d'une équipe dynamique."
+  ],
+  "stats": [
+    {
+      "value": "5+",
+      "label": "projets full stack réalisés"
+    },
+    {
+      "value": "2",
+      "label": "stages en entreprise et association"
+    },
+    {
+      "value": "15+",
+      "label": "technologies et outils utilisés"
+    }
+  ],
+  "typed": [
+    "applications web",
+    "API sécurisées",
+    "plateformes de gestion",
+    "interfaces React"
+  ],
+  "socials": {
+    "github": "https://github.com/alhassane224624",
+    "linkedin": "https://www.linkedin.com/in/alhassane-dian%C3%A9/"
+  },
+  "skills": [
+    {
+      "group": "Front-end",
+      "icon": "layout",
+      "items": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React.js",
+        "Redux",
+        "React Router",
+        "Bootstrap"
+      ]
+    },
+    {
+      "group": "Back-end",
+      "icon": "server",
+      "items": [
+        "PHP",
+        "Laravel",
+        "Python",
+        "API REST",
+        "Authentification JWT",
+        "Architecture MVC"
+      ]
+    },
+    {
+      "group": "Bases de données",
+      "icon": "database",
+      "items": [
+        "MySQL",
+        "MongoDB",
+        "SQL",
+        "Modélisation de données"
+      ]
+    },
+    {
+      "group": "Outils & méthodes",
+      "icon": "tool",
+      "items": [
+        "Git",
+        "Jira",
+        "VS Code",
+        "XAMPP",
+        "Agile / Scrum"
+      ]
+    }
+  ],
+  "softSkills": [
+    "Rigueur",
+    "Créativité",
+    "Esprit d'équipe",
+    "Sens de l'organisation"
+  ],
+  "languages": [
+    {
+      "name": "Français",
+      "level": "Courant"
+    },
+    {
+      "name": "Anglais",
+      "level": "Débutant"
+    }
+  ],
+  "experience": [
+    {
+      "period": "Juin 2025 — Août 2025",
+      "title": "Stage — Développement d'outils numériques internes",
+      "place": "Association Life Makers · Nador",
+      "points": [
+        "Création et amélioration d'applications web pour la gestion des activités de l'association.",
+        "Développement de fonctionnalités modernes selon une approche agile et collaborative."
+      ]
+    },
+    {
+      "period": "Mai 2025",
+      "title": "Stage — Application de gestion des archives",
+      "place": "Cité des Métiers et des Compétences (CMC) · Nador",
+      "points": [
+        "Conception et développement d'un système complet de gestion documentaire avec Laravel et MySQL.",
+        "Optimisation du stockage et de la recherche de fichiers, avec gestion des rôles et permissions.",
+        "Travail en équipe IT pour garantir la qualité, la sécurité et la performance du produit."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "2023 — 2025",
+      "title": "Diplôme de Technicien Spécialisé en Développement Digital — option Web Full Stack",
+      "place": "Cité des Métiers et des Compétences de Nador (OFPPT)",
+      "description": "Formation axée sur le développement full stack : conception front-end, logique back-end, gestion de bases de données et méthodologie agile."
+    },
+    {
+      "period": "2020 — 2023",
+      "title": "BTS en Maintenance Réseau Informatique",
+      "place": "École Nationale des Postes et Télécommunications · Conakry, Guinée",
+      "description": "Maintenance des systèmes informatiques, installation et administration de réseaux."
+    }
+  ]
+}

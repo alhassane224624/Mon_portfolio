@@ -1,0 +1,8 @@
+node_modules/
+.env
+server/data/*.db
+server/data/*.db-*
+
+# Ancienne copie du projet
+/portfolio full stack/
+.claude/

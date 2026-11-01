@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Administration — Portfolio</title>
+  <script src="/js/theme-init.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <script type="module" src="/js/admin.js"></script>
+</head>
+<body>
+  <!-- Connexion -->
+  <section class="login" id="loginView">
+    <form class="form login__card" id="loginForm">
+      <a href="/" class="logo">&lt;<span class="gradient-text">admin</span>/&gt;</a>
+      <h1>Espace administration</h1>
+      <p class="muted">Gérez vos projets et lisez les messages reçus.</p>
+      <label class="field">
+        <span>Mot de passe</span>
+        <input type="password" name="password" autocomplete="current-password" required>
+      </label>
+      <button class="btn btn--primary btn--block" type="submit">Se connecter</button>
+      <p class="form__status is-err" id="loginStatus" role="status"></p>
+    </form>
+  </section>
+
+  <!-- Tableau de bord -->
+  <div class="dash" id="dashView" hidden>
+    <header class="dash__top">
+      <div class="container dash__top-inner">
+        <a href="/" class="logo">&lt;<span class="gradient-text">admin</span>/&gt;</a>
+        <div class="dash__actions">
+          <a href="/" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">Voir le site</a>
+          <button class="btn btn--sm btn--ghost" id="logoutBtn">Déconnexion</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container dash__main">
+      <div class="kpis" id="kpis"></div>
+
+      <div class="tabs" role="tablist">
+        <button class="filter is-active" data-tab="messages" role="tab">Messages <span class="filter__count" id="unreadBadge" hidden></span></button>
+        <button class="filter" data-tab="projects" role="tab">Projets</button>
+      </div>
+
+      <section data-panel="messages">
+        <div class="list" id="messages"></div>
+      </section>
+
+      <section data-panel="projects" hidden>
+        <div class="dash__grid">
+          <form class="form" id="projectForm" novalidate>
+            <h2 id="projectFormTitle">Nouveau projet</h2>
+            <input type="hidden" name="id">
+            <label class="field"><span>Titre</span><input name="title" required maxlength="120"><small class="field__error" data-error="title"></small></label>
+            <label class="field"><span>Description</span><textarea name="description" rows="4" required maxlength="1000"></textarea><small class="field__error" data-error="description"></small></label>
+            <div class="form__row">
+              <label class="field"><span>Catégorie</span>
+                <select name="category">
+                  <option value="fullstack">Full stack</option>
+                  <option value="frontend">Front-end</option>
+                  <option value="backend">Back-end</option>
+                  <option value="mobile">Mobile</option>
+                </select>
+              </label>
+              <label class="field"><span>Technologies (séparées par des virgules)</span><input name="tags" placeholder="React, Node.js"></label>
+            </div>
+            <div class="form__row">
+              <label class="field"><span>Lien du code</span><input name="repo_url" type="url" placeholder="https://github.com/…"><small class="field__error" data-error="repo_url"></small></label>
+              <label class="field"><span>Lien de la démo</span><input name="demo_url" type="url" placeholder="https://…"><small class="field__error" data-error="demo_url"></small></label>
+            </div>
+            <label class="field"><span>Image d'aperçu (capture d'écran)</span><input name="image_url" placeholder="/img/projets/marketlocal.webp ou https://…"><small class="field__error" data-error="image_url"></small></label>
+            <label class="check"><input type="checkbox" name="featured"> Mettre à la une</label>
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit" id="projectSubmit">Ajouter le projet</button>
+              <button class="btn btn--ghost" type="button" id="projectCancel" hidden>Annuler</button>
+            </div>
+          </form>
+          <div class="list" id="projectList"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="alert"></div>
+</body>
+</html>
